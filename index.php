@@ -34,8 +34,8 @@ if ($result) {
              '<tr>'
             .'<td>' . $row["id"] . '</td>'
             .'<td>' . $row["name"] .'</td>'
-            .'<td>' . $row["age"] .'</td>'
-            .'<td>' . $row["address"] . '</td>'
+            .'<td>' . $row["group"] .'</td>'
+            .'<td>' . $row["created"] . '</td>'
             .'</tr>'
         );
     }
