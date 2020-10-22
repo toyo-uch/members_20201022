@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body,html{
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+body,input[type=text],button {
+    font-size:24px;
+}
+
+input[type=text],button {
+    padding:10px;
+}
+
+form {
+    padding:30px;
+}
+
+input[type=text] {
+}
+
+button {
+    background:black;
+    color:white;
+}
+
+table {
+    border-collapse:collapse;
+    margin:30px;
+}
+th,td {
+    border:1px solid silver;
+    padding:10px;
+}
