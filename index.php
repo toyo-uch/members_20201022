@@ -10,12 +10,19 @@
 
 <body>
 <table>
+<tr>
+    <th>id</th>
+    <th>名前</th>
+    <th>グループ</th>
+    <th>作成日</th>
+</tr>
+
 <?php
 //データベースに接続する
-$mysqli = new mysqli('localhost','root','root','meibo');
+$mysqli = new mysqli('localhost','root','root','members_20201022');
 
 //SQLを用意する
-$sql = "SELECT * FROM meibo";
+$sql = "SELECT * FROM members";
 
 //データベースから情報を読み出す
 $result = $mysqli->query($sql);
