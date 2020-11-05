@@ -23,25 +23,25 @@
         <button>送信</button>
     </form>
 
+    <p><a id="click" href="index.php">一覧に戻る</a></p>
+
     <?php
 
-        //データベースに接続する
-        $mysqli = new mysqli('localhost','root','root','members_20201022');
+    //データベースに接続する
+    $mysqli = new mysqli('localhost','root','root','members_20201022');
 
-        //SQLを組み立てる
-        $sql = "INSERT INTO members(name,`group`) VALUES('".$_GET['name']."','".$_GET['group']."')";
+    //SQLを組み立てる
+    $sql = "INSERT INTO members(name,`group`) VALUES('".$_GET['name']."','".$_GET['group']."')";
 
-        //組み立てたSQLを確認する
-        echo("保存されました");
+    //組み立てたSQLを確認する
+    echo("保存されました");
 
-        //SQLを実行する
-        $mysqli->query($sql);
+    //SQLを実行する
+    $mysqli->query($sql);
 
-        //データベースを切断する
-        $mysqli->close();
-        ?>
-
-    <p><a id="click" href="index.php">一覧に戻る</a></p>
+    //データベースを切断する
+    $mysqli->close();
+    ?>
 
 </body>
 
