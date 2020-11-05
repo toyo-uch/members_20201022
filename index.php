@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+<!--
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
+-->
 
     <title>title</title>
 
