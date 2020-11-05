@@ -9,7 +9,7 @@ $sql = "INSERT INTO members(name,`group`) VALUES('".$_POST['name']."','".$_POST[
 
 
 //組み立てたSQLを確認する
-echo($sql);
+//echo($sql);
 
 //SQLを実行する
 $mysqli->query($sql);
@@ -17,3 +17,7 @@ $mysqli->query($sql);
 //データベースを切断する
 $mysqli->close();
 ?>
+
+
+<p>送信されました</p>
+<a href="index.php">一覧</a>
