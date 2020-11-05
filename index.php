@@ -52,7 +52,7 @@ $mysqli->close();
 ?>
 </table>
 
-<p><a id="click" href="#">クリック!</a></p>
+<a href="index.html">クリック!</a>
 
 </body>
 </html>
