@@ -1,29 +1,30 @@
-<!DOCTYPE>
+<html>
 
-<html lang="ja">
+
 
 <head>
-
-<meta charset="UTF-8">
-
-<!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
-
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <title>入力フォーム</title>
 </head>
+
+
 
 <body>
 
-<form method="post" action="save.php">
-名前<input type="text" name="name"><br>
-グループ<input type="text" name="group"><br>
-<button>送信</button>
-</form>
+<!--
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+-->
 
-<a href="index.php">一覧</a>
-
-
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/script.js"></script>
+    <form method="GET" action="save.php">
+        名前<input type="text" name="name"><br>
+        グループ<input type="text" name="group"><br>
+        <button>送信</button>
+    </form>
 
 </body>
+
+
 
 </html>

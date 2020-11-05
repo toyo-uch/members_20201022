@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+<!--
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
+-->
 
     <title>title</title>
 
@@ -52,7 +54,8 @@ $mysqli->close();
 ?>
 </table>
 
-    <a href="index.html">クリック!</a>
+<p><a id="click" href="index.html">クリック!</a></p>
+
 
 </body>
 </html>

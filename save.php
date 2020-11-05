@@ -1,23 +1,42 @@
-<?php
-
-//データベースに接続する
-$mysqli = new mysqli('localhost','root','root','members_20201022');
-
-//SQLを組み立てる
-
-$sql = "INSERT INTO members(name,`group`) VALUES('".$_POST['name']."','".$_POST['group']."')";
+<html>
 
 
-//組み立てたSQLを確認する
-//echo($sql);
-
-//SQLを実行する
-$mysqli->query($sql);
-
-//データベースを切断する
-$mysqli->close();
-?>
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <title>入力フォーム</title>
+</head>
 
 
-<p>送信されました</p>
-<a href="index.php">一覧</a>
+<body>
+
+    <!--
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+-->
+
+    <?php
+
+        //データベースに接続する
+        $mysqli = new mysqli('localhost','root','root','members_20201022');
+
+        //SQLを組み立てる
+        $sql = "INSERT INTO members(name,`group`) VALUES('".$_GET['name']."','".$_GET['group']."')";
+
+        //組み立てたSQLを確認する
+        echo("保存されました");
+
+        //SQLを実行する
+        $mysqli->query($sql);
+
+        //データベースを切断する
+        $mysqli->close();
+        ?>
+
+    <p><a id="click" href="index.php">一覧に戻る</a></p>
+
+</body>
+
+
+
+</html>
