@@ -50,7 +50,7 @@ $mysqli->close();
 ?>
 </table>
 
-<p><a id="click" href="#">クリック!</a></p>
+<p><a href="index.html">クリック!</a></p>
 
 </body>
 </html>
